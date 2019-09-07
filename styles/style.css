@@ -11,7 +11,10 @@
 a:visited {
   color: yellow;
 }
-
+.lastResult {
+  color: white;
+  padding: 3px;
+}
 a:hover {
   text-decoration: none;
   background-color: black;
@@ -19,9 +22,7 @@ a:hover {
 .coloredlist {
   color: #197278;
 }
-body.page1 {
-  background-image: ;
-}
+
 .page3 {
   background-color: #197278;
   padding: 0 20px;
@@ -36,6 +37,7 @@ html {
 }
 h1 {
   text-align: center;
+  float: none;
 }
 h2 {
   text-align: center;
@@ -53,7 +55,6 @@ nav ul li {
   float: left;
   padding: 20px;
 }
-
 li {
   padding: 10px;
   list-style-type: none;
@@ -67,4 +68,7 @@ li {
   width: calc(40% - 30px);
   background-color: rebeccapurple;
   color: white;
+}
+div {
+  clear: left;
 }
