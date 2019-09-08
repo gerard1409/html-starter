@@ -12,12 +12,11 @@ let resetButton;
 function checkGuess() {
   let userGuess = Number(guessField.value);
   if (guessCount === 1) {
-    guesses.textContent = "Previous guesses:";
+    guesses.textContent = "Previous guesses;";
   }
-  guesses.textContent += userGuess + " ";
-
+  guesses.textContent += userGuess + "";
   if (userGuess === randomNumber) {
-    lastResult.textContent = "Congratulations! You got it right!";
+    lastResult.textContent = "Congratulation!You got it right!";
     lastResult.style.backgroundColor = "green";
     lowOrHi.textContent = "";
     setGameOver();
@@ -27,7 +26,7 @@ function checkGuess() {
   } else {
     lastResult.textContent = "Wrong!";
     lastResult.style.backgroundColor = "red";
-    if (userGuess < randomNumber) {
+    if (userguess < randomNumber) {
       lowOrHi.textContent = "Last guess was too low!";
     } else if (userGuess > randomNumber) {
       lowOrHi.textContent = "Last guess was too high!";
